@@ -1,0 +1,75 @@
+# Raw and filtered sequencing reads
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.fast5
+*.pod5
+*.sra
+/ont and illumina reads (from FIC)/
+
+# Alignments and their indexes
+*.sam
+*.bam
+*.cram
+*.bai
+*.csi
+*.crai
+
+# Regenerable reference indexes (bwa, samtools, minimap2, bowtie2)
+*.amb
+*.ann
+*.bwt
+*.bwt.2bit.64
+*.pac
+*.sa
+*.0123
+*.fai
+*.mmi
+*.bt2
+*.bt2l
+
+# Coverage tracks and variant calls
+*.bed.gz
+*.bedgraph
+*.bw
+*.vcf.gz
+*.bcf
+*.tbi
+
+# Flye intermediate stages (final assembly files in flye/ are kept)
+/flye/[0-9][0-9]-*/
+
+# NanoPlot per-plot HTML (PNGs, stats and the main report are kept)
+/nanoplot/*.html
+!/nanoplot/NanoPlot-report.html
+
+# Logs and temporary files
+*.log
+*.stderr
+*.tmp
+*.swp
+*~
+
+# Workflow caches
+work/
+.nextflow/
+.nextflow.log*
+.snakemake/
+
+# Python / R / notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.Rhistory
+.RData
+.Rproj.user/
+
+# Secrets, editor and OS files
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
